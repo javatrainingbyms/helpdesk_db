@@ -34,5 +34,20 @@ public class User {
 	@OneToMany(mappedBy="user")
 	private List<Ticket> tickets;	
 	@OneToMany(mappedBy="user")
-	private List<Solution> solutions;	
+	private List<Solution> solutions;
+	public User(String userId, String password, String name, String email, String mobile, String userType) {
+		super();
+		this.userId = userId;
+		this.password = password;
+		this.name = name;
+		this.email = email;
+		this.mobile = mobile;
+		this.userType = userType;
+	}	
+	
+	
+	
+	
+	
+	
 }
